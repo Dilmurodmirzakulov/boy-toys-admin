@@ -73,7 +73,7 @@
               </a>
             </li>
             <!-- Banners -->
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="banner.html" class="menu-link">
                 <i class="menu-icon fa-solid fa-panorama"></i>
                 <div data-i18n="Analytics">Banners</div>
@@ -94,7 +94,7 @@
               </a>
             </li>
             <!-- Payments -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="payments.html" class="menu-link">
                 <i class="menu-icon fa-solid fa-money-check-dollar"></i>
                 <div data-i18n="Analytics">Payments</div>
@@ -212,7 +212,7 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold mb-4">Payments</h4>
+              <h4 class="fw-bold mb-4">Banners</h4>
 
               <div class="card">
                 <div class="card-body">
@@ -242,7 +242,7 @@
                         class="dt-button create-new btn btn-primary"
                         tabindex="0"
                         data-bs-toggle="modal"
-                        data-bs-target="#createModal"
+                        data-bs-target="#productEditModal"
                         type="button"
                       >
                         <span
@@ -260,21 +260,44 @@
                         <tr>
                           <th scope="col">#</th>
                           <th scope="col">Name</th>
+                          <th scope="col">Description</th>
+                          <th scope="col">Image</th>
                           <th scope="col">Actions</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th scope="row">1</th>
-                          <td>Payme</td>
+                          <td>Nimadir</td>
+                          <td>Ko'proq</td>
+                          <td
+                            class="d-flex align-items-center justify-content-center"
+                          >
+                            <img
+                              src="https://darkor.bossblog.uz/images/1694521973034.png"
+                              class="img"
+                              width="100px"
+                              alt=""
+                            />
+                          </td>
                           <td>
-                            <div>
+                            <div
+                              class="d-flex flex-column flex-md-row align-items-center justify-content-start gap-2"
+                            >
                               <button
                                 class="btn btn-primary btn-icon mr-0 mr-md-2"
                                 data-bs-toggle="modal"
                                 data-bs-target="#productEditModal"
                               >
                                 <i class="fa-solid fa-pen"></i>
+                              </button>
+
+                              <button
+                                class="btn btn-info btn-icon mb-md-0 mr-0 mr-md-2"
+                                data-bs-toggle="modal"
+                                data-bs-target="#bannerViewModal"
+                              >
+                                <i class="fa-solid fa-eye"></i>
                               </button>
 
                               <button
@@ -288,10 +311,23 @@
                           </td>
                         </tr>
                         <tr>
-                          <th scope="row">2</th>
-                          <td>Click</td>
+                          <th scope="row">1</th>
+                          <td>Nimadir</td>
+                          <td>Ko'proq</td>
+                          <td
+                            class="d-flex flex-column align-items-center justify-content-center"
+                          >
+                            <img
+                              src="https://darkor.bossblog.uz/images/1694521973034.png"
+                              class="img"
+                              width="100"
+                              height="100"
+                            />
+                          </td>
                           <td>
-                            <div>
+                            <div
+                              class="d-flex flex-column flex-md-row align-items-center justify-content-start gap-2"
+                            >
                               <button
                                 class="btn btn-primary btn-icon mr-0 mr-md-2"
                                 data-bs-toggle="modal"
@@ -301,26 +337,11 @@
                               </button>
 
                               <button
-                                class="btn btn-danger btn-icon"
+                                class="btn btn-info btn-icon mb-2 mb-md-0 mr-0 mr-md-2"
                                 data-bs-toggle="modal"
-                                data-bs-target="#deletePayment"
+                                data-bs-target="#bannerViewModal"
                               >
-                                <i class="fa-solid fa-trash-can"></i>
-                              </button>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Uzumbank</td>
-                          <td>
-                            <div>
-                              <button
-                                class="btn btn-primary btn-icon mr-0 mr-md-2"
-                                data-bs-toggle="modal"
-                                data-bs-target="#productEditModal"
-                              >
-                                <i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-eye"></i>
                               </button>
 
                               <button
@@ -421,6 +442,7 @@
     </div>
 
     <!-- Modal -->
+    <!-- Modal -->
     <div
       class="modal fade"
       id="productEditModal"
@@ -431,9 +453,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="productEditModalLabel">
-              Payments Name
-            </h5>
+            <h5 class="modal-title" id="productEditModalLabel">Slider</h5>
             <button
               type="button"
               class="btn-close"
@@ -444,12 +464,101 @@
           <div class="modal-body">
             <form>
               <div>
-                <label htmlFor="name" class="mb-2 form-labe"> Name </label>
+                <label htmlFor="name-uz" class="mb-2 form-labe"> Name </label>
                 <input
                   type="text"
                   class="form-control mb-2"
-                  placeholder="Payment name"
-                  name="name"
+                  placeholder="Banner nomi ..."
+                  name="nameUz"
+                />
+                <label htmlFor="description-uz" class="mb-2 form-labe">
+                  Tasnifi
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner Tasnifi ..."
+                  name="descriptionUz"
+                ></textarea>
+              </div>
+
+              <div>
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                />
+              </div>
+              <hr class="my-4" />
+              <div>
+                <label htmlFor="name-ru" class="mb-2 form-labe">
+                  Название
+                </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner nomi"
+                  name="nameRu"
+                />
+                <label htmlFor="description-ru" class="mb-2 form-labe">
+                  Описание
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner tasnifi..."
+                  name="descriptionRu"
+                ></textarea>
+              </div>
+              <div>
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                />
+              </div>
+              <hr class="my-4" />
+              <div>
+                <label htmlFor="name-eu" class="mb-2 form-labe"> Name </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner name"
+                  name="nameEn"
+                />
+                <label htmlFor="description-eu" class="mb-2 form-labe">
+                  Description
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner description..."
+                  name="descriptionEn"
+                ></textarea>
+              </div>
+
+              <div>
+                <hr class="my-4" />
+
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
                 />
               </div>
             </form>
@@ -514,15 +623,15 @@
 
     <div
       class="modal fade"
-      id="createModal"
+      id="bannerCreateModal"
       tabindex="-1"
-      aria-labelledby="createModal"
+      aria-labelledby="productEditModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="createModal">Payments Name</h5>
+            <h5 class="modal-title" id="productEditModalLabel">Slider</h5>
             <button
               type="button"
               class="btn-close"
@@ -533,12 +642,101 @@
           <div class="modal-body">
             <form>
               <div>
-                <label htmlFor="name" class="mb-2 form-labe"> Name </label>
+                <label htmlFor="name-uz" class="mb-2 form-labe"> Name </label>
                 <input
                   type="text"
                   class="form-control mb-2"
-                  placeholder="Payment name"
-                  name="name"
+                  placeholder="Banner nomi ..."
+                  name="nameUz"
+                />
+                <label htmlFor="description-uz" class="mb-2 form-labe">
+                  Tasnifi
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner Tasnifi ..."
+                  name="descriptionUz"
+                ></textarea>
+              </div>
+
+              <div>
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                />
+              </div>
+              <hr class="my-4" />
+              <div>
+                <label htmlFor="name-ru" class="mb-2 form-labe">
+                  Название
+                </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner nomi"
+                  name="nameRu"
+                />
+                <label htmlFor="description-ru" class="mb-2 form-labe">
+                  Описание
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner tasnifi..."
+                  name="descriptionRu"
+                ></textarea>
+              </div>
+              <div>
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                />
+              </div>
+              <hr class="my-4" />
+              <div>
+                <label htmlFor="name-eu" class="mb-2 form-labe"> Name </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner name"
+                  name="nameEn"
+                />
+                <label htmlFor="description-eu" class="mb-2 form-labe">
+                  Description
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner description..."
+                  name="descriptionEn"
+                ></textarea>
+              </div>
+
+              <div>
+                <hr class="my-4" />
+
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
                 />
               </div>
             </form>
@@ -557,6 +755,148 @@
       </div>
     </div>
 
+    <!-- view Modal -->
+
+    <div
+      class="modal fade"
+      id="bannerViewModal"
+      tabindex="-1"
+      aria-labelledby="productEditModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productEditModalLabel">Slider</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div>
+                <label htmlFor="name-uz" class="mb-2 form-labe"> Name </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner nomi ..."
+                  name="nameUz"
+                  disabled="true"
+                />
+                <label htmlFor="description-uz" class="mb-2 form-labe">
+                  Tasnifi
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner Tasnifi ..."
+                  name="descriptionUz"
+                  disabled="true"
+                ></textarea>
+              </div>
+
+              <div>
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                  disabled="true"
+                />
+              </div>
+              <hr class="my-4" />
+              <div>
+                <label htmlFor="name-ru" class="mb-2 form-labe">
+                  Название
+                </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner nomi"
+                  name="nameRu"
+                  disabled="true"
+                />
+                <label htmlFor="description-ru" class="mb-2 form-labe">
+                  Описание
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner tasnifi..."
+                  name="descriptionRu"
+                  disabled="true"
+                ></textarea>
+              </div>
+              <div>
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                  disabled="true"
+                />
+              </div>
+              <hr class="my-4" />
+              <div>
+                <label htmlFor="name-eu" class="mb-2 form-labe"> Name </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner name"
+                  name="nameEn"
+                  disabled="true"
+                />
+                <label htmlFor="description-eu" class="mb-2 form-labe">
+                  Description
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner description..."
+                  name="descriptionEn"
+                  disabled="true"
+                ></textarea>
+              </div>
+
+              <div>
+                <hr class="my-4" />
+
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

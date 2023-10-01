@@ -87,14 +87,14 @@
               </a>
             </li>
             <!-- Branches -->
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="branches.html" class="menu-link">
                 <i class="menu-icon fa-solid fa-map-location-dot"></i>
                 <div data-i18n="Analytics">Branches</div>
               </a>
             </li>
-            <!-- Payments -->
-            <li class="menu-item active">
+            <!-- Branchess -->
+            <li class="menu-item">
               <a href="payments.html" class="menu-link">
                 <i class="menu-icon fa-solid fa-money-check-dollar"></i>
                 <div data-i18n="Analytics">Payments</div>
@@ -212,7 +212,7 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold mb-4">Payments</h4>
+              <h4 class="fw-bold mb-4">Branches</h4>
 
               <div class="card">
                 <div class="card-body">
@@ -266,7 +266,7 @@
                       <tbody>
                         <tr>
                           <th scope="row">1</th>
-                          <td>Payme</td>
+                          <td>Toshkent</td>
                           <td>
                             <div>
                               <button
@@ -280,7 +280,7 @@
                               <button
                                 class="btn btn-danger btn-icon"
                                 data-bs-toggle="modal"
-                                data-bs-target="#deletePayment"
+                                data-bs-target="#deleteBranches"
                               >
                                 <i class="fa-solid fa-trash-can"></i>
                               </button>
@@ -289,7 +289,7 @@
                         </tr>
                         <tr>
                           <th scope="row">2</th>
-                          <td>Click</td>
+                          <td>Namangan</td>
                           <td>
                             <div>
                               <button
@@ -303,7 +303,7 @@
                               <button
                                 class="btn btn-danger btn-icon"
                                 data-bs-toggle="modal"
-                                data-bs-target="#deletePayment"
+                                data-bs-target="#deleteBranches"
                               >
                                 <i class="fa-solid fa-trash-can"></i>
                               </button>
@@ -312,7 +312,7 @@
                         </tr>
                         <tr>
                           <th scope="row">3</th>
-                          <td>Uzumbank</td>
+                          <td>Navoiy</td>
                           <td>
                             <div>
                               <button
@@ -326,7 +326,7 @@
                               <button
                                 class="btn btn-danger btn-icon"
                                 data-bs-toggle="modal"
-                                data-bs-target="#deletePayment"
+                                data-bs-target="#deleteBranches"
                               >
                                 <i class="fa-solid fa-trash-can"></i>
                               </button>
@@ -432,7 +432,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="productEditModalLabel">
-              Payments Name
+              Branches Name
             </h5>
             <button
               type="button"
@@ -448,7 +448,7 @@
                 <input
                   type="text"
                   class="form-control mb-2"
-                  placeholder="Payment name"
+                  placeholder="Branch name"
                   name="name"
                 />
               </div>
@@ -470,17 +470,17 @@
     <!-- Delete Modal -->
     <div
       class="modal fade"
-      id="deletePayment"
+      id="deleteBranches"
       tabindex="-1"
       data-bs-backdrop="static"
-      aria-labelledby="deletePaymentLabel"
+      aria-labelledby="deleteBranchesLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="deletePaymentLabel">
-              Bu payment turini o'chirmoqchimisiz?
+            <h1 class="modal-title fs-5" id="deleteBranchesLabel">
+              Bu Hududni o'chirmoqchimisiz?
             </h1>
             <button
               type="button"
@@ -522,7 +522,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="createModal">Payments Name</h5>
+            <h5 class="modal-title" id="createModal">Branches Name</h5>
             <button
               type="button"
               class="btn-close"
@@ -537,7 +537,7 @@
                 <input
                   type="text"
                   class="form-control mb-2"
-                  placeholder="Payment name"
+                  placeholder="Branch name"
                   name="name"
                 />
               </div>
