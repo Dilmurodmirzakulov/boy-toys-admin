@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/core.css"
+      class="template-customizer-core-css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/theme-default.css"
+      class="template-customizer-theme-css"
+    />
+    <link rel="stylesheet" href="./css/demo.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside
+          id="layout-menu"
+          class="layout-menu menu-vertical menu bg-menu-theme"
+        >
+          <div class="app-brand demo justify-content-start">
+            <a href="profile.html" class="app-brand-link">
+              <span
+                class="app-brand-text demo menu-text fw-bolder text-uppercase text-gray"
+              >
+                BOY TOYS
+              </span>
+            </a>
+
+            <a
+              href="javascript:void(0);"
+              class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none"
+            >
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Products -->
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon fa-solid fa-layer-group"></i>
+                <div data-i18n="Analytics">Products</div>
+              </a>
+            </li>
+            <!-- Banners -->
+            <li class="menu-item">
+              <a href="banner.html" class="menu-link">
+                <i class="menu-icon fa-solid fa-panorama"></i>
+                <div data-i18n="Analytics">Banners</div>
+              </a>
+            </li>
+            <!-- Clients -->
+            <li class="menu-item">
+              <a href="clients.html" class="menu-link">
+                <i class="menu-icon fa-solid fa-users"></i>
+                <div data-i18n="Analytics">Clients</div>
+              </a>
+            </li>
+            <!-- Branches -->
+            <li class="menu-item active">
+              <a href="branches.html" class="menu-link">
+                <i class="menu-icon fa-solid fa-map-location-dot"></i>
+                <div data-i18n="Analytics">Branches</div>
+              </a>
+            </li>
+            <!-- Branchess -->
+            <li class="menu-item">
+              <a href="payments.html" class="menu-link">
+                <i class="menu-icon fa-solid fa-money-check-dollar"></i>
+                <div data-i18n="Analytics">Payments</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div
+              class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+            >
+              <a
+                class="nav-item nav-link px-0 me-xl-4"
+                href="javascript:void(0)"
+              >
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div
+              class="navbar-nav-right d-flex align-items-center"
+              id="navbar-collapse"
+            >
+              <ul class="nav d-none d-md-flex wu-main-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link"> Mail </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"> SRS </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"> Timetable </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"> Attendace </a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                  >
+                    <div class="avatar avatar-online">
+                      <img
+                        src="./img/profile.jpeg"
+                        alt
+                        class="w-px-40 h-auto rounded-circle"
+                      />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img
+                                src="./img/profile.jpeg"
+                                alt
+                                class="w-px-40 h-auto rounded-circle"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block"
+                              >Zarina Ochilova</span
+                            >
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./profile.html">
+                        <i class="bx bx-user me-2"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="auth-login-basic.html">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <h4 class="py-3 mb-4">Order Details</h4>
+
+            <div
+              class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3"
+            >
+              <div
+                class="d-flex flex-row justify-content-beetwen align-items-center gap-2"
+              >
+                <h5 class="mb-1 mt-3">Order #32543</h5>
+
+                <select class="form-select w-50">
+                  <option selected class="badge bg-label-info">
+                    Dispatched
+                  </option>
+                  <option class="badge bg-label-danger">One</option>
+                  <option class="badge bg-label-primary">Two</option>
+                </select>
+                <p class="text-body">Aug 17, 2023, 5:48 (ET)</p>
+              </div>
+              <div class="d-flex align-content-center flex-wrap gap-2">
+                <button
+                  class="btn btn-danger"
+                  data-bs-toggle="modal"
+                  data-bs-target="#deleteOrder"
+                >
+                  Delete Order
+                </button>
+              </div>
+            </div>
+
+            <!-- Order Details Table -->
+
+            <div class="row">
+              <div class="">
+                <div class="card mb-4">
+                  <div
+                    class="card-header d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="card-title m-0">Order details</h5>
+                    <h6 class="m-0"><a href=" javascript:void(0)">Edit</a></h6>
+                  </div>
+                  <div class="card-datatable table-responsive">
+                    <div
+                      id="DataTables_Table_0_wrapper"
+                      class="dataTables_wrapper dt-bootstrap5 no-footer"
+                    >
+                      <table
+                        class="datatables-order-details table dataTable no-footer dtr-column"
+                        id="DataTables_Table_0"
+                        style="width: 919px"
+                      >
+                        <thead>
+                          <tr>
+                            <th
+                              class="control sorting_disabled dtr-hidden"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 0px; display: none"
+                              aria-label=""
+                            ></th>
+                            <th
+                              class="sorting_disabled dt-checkboxes-cell dt-checkboxes-select-all"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 18px"
+                              data-col="1"
+                              aria-label=""
+                            >
+                              <input type="checkbox" class="form-check-input" />
+                            </th>
+                            <th
+                              class="w-50 sorting_disabled"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 354px"
+                              aria-label="products"
+                            >
+                              products
+                            </th>
+                            <th
+                              class="w-25 sorting_disabled"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 154px"
+                              aria-label="price"
+                            >
+                              price
+                            </th>
+                            <th
+                              class="w-25 sorting_disabled"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 144px"
+                              aria-label="qty"
+                            >
+                              qty
+                            </th>
+                            <th
+                              class="sorting_disabled"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 53px"
+                              aria-label="total"
+                            >
+                              total
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="odd">
+                            <td
+                              class="control"
+                              tabindex="0"
+                              style="display: none"
+                            ></td>
+                            <td class="dt-checkboxes-cell">
+                              <input
+                                type="checkbox"
+                                class="dt-checkboxes form-check-input"
+                              />
+                            </td>
+                            <td class="sorting_1">
+                              <div
+                                class="d-flex justify-content-start align-items-center text-nowrap"
+                              >
+                                <div class="avatar-wrapper">
+                                  <div class="avatar me-2">
+                                    <img
+                                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/products/woodenchair.png"
+                                      alt="product-Wooden Chair"
+                                      class="rounded-2"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                  <h6 class="text-body mb-0">Wooden Chair</h6>
+                                  <small class="text-muted"
+                                    >Material: Wooden</small
+                                  >
+                                </div>
+                              </div>
+                            </td>
+                            <td><span>$841</span></td>
+                            <td><span class="text-body">2</span></td>
+                            <td><h6 class="mb-0">$1682</h6></td>
+                          </tr>
+                          <tr class="even">
+                            <td
+                              class="control"
+                              tabindex="0"
+                              style="display: none"
+                            ></td>
+                            <td class="dt-checkboxes-cell">
+                              <input
+                                type="checkbox"
+                                class="dt-checkboxes form-check-input"
+                              />
+                            </td>
+                            <td class="sorting_1">
+                              <div
+                                class="d-flex justify-content-start align-items-center text-nowrap"
+                              >
+                                <div class="avatar-wrapper">
+                                  <div class="avatar me-2">
+                                    <img
+                                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/products/oneplus.png"
+                                      alt="product-Oneplus 10"
+                                      class="rounded-2"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                  <h6 class="text-body mb-0">Oneplus 10</h6>
+                                  <small class="text-muted"
+                                    >Storage:128gb</small
+                                  >
+                                </div>
+                              </div>
+                            </td>
+                            <td><span>$896</span></td>
+                            <td><span class="text-body">3</span></td>
+                            <td><h6 class="mb-0">$2688</h6></td>
+                          </tr>
+                          <tr class="odd">
+                            <td
+                              class="control"
+                              tabindex="0"
+                              style="display: none"
+                            ></td>
+                            <td class="dt-checkboxes-cell">
+                              <input
+                                type="checkbox"
+                                class="dt-checkboxes form-check-input"
+                              />
+                            </td>
+                            <td class="sorting_1">
+                              <div
+                                class="d-flex justify-content-start align-items-center text-nowrap"
+                              >
+                                <div class="avatar-wrapper">
+                                  <div class="avatar me-2">
+                                    <img
+                                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/products/nikejordan.png"
+                                      alt="product-Nike Jordan"
+                                      class="rounded-2"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                  <h6 class="text-body mb-0">Nike Jordan</h6>
+                                  <small class="text-muted">Size:8UK</small>
+                                </div>
+                              </div>
+                            </td>
+                            <td><span>$392</span></td>
+                            <td><span class="text-body">1</span></td>
+                            <td><h6 class="mb-0">$392</h6></td>
+                          </tr>
+                          <tr class="even">
+                            <td
+                              class="control"
+                              tabindex="0"
+                              style="display: none"
+                            ></td>
+                            <td class="dt-checkboxes-cell">
+                              <input
+                                type="checkbox"
+                                class="dt-checkboxes form-check-input"
+                              />
+                            </td>
+                            <td class="sorting_1">
+                              <div
+                                class="d-flex justify-content-start align-items-center text-nowrap"
+                              >
+                                <div class="avatar-wrapper">
+                                  <div class="avatar me-2">
+                                    <img
+                                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/products/facecream.png"
+                                      alt="product-Face cream"
+                                      class="rounded-2"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                  <h6 class="text-body mb-0">Face cream</h6>
+                                  <small class="text-muted">Gender:Women</small>
+                                </div>
+                              </div>
+                            </td>
+                            <td><span>$813</span></td>
+                            <td><span class="text-body">2</span></td>
+                            <td><h6 class="mb-0">$1626</h6></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div
+                      class="d-flex justify-content-end align-items-center m-3 mb-2 p-1"
+                    >
+                      <div class="order-calculations">
+                        <div class="d-flex justify-content-between mb-2">
+                          <span class="w-px-100">Subtotal:</span>
+                          <span class="text-heading">$6398</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <span class="w-px-100">Discount:</span>
+                          <span class="text-heading mb-0">$22</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <span class="w-px-100">Tax:</span>
+                          <span class="text-heading">$30</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <h6 class="w-px-100 mb-0">Total:</h6>
+                          <h6 class="mb-0">$6450</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Mobile Tabs -->
+    <div class="mobile-nav d-lg-none">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <i class="bx bx-home-circle"></i>
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">
+            <i class="bx bxs-file-doc"></i>
+            <span class="menu-title">Local</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bx bxs-file-plus"></i>
+            <span class="menu-title">Create</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta charset="utf-8" />
+              <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1"
+              />
+              <title>Bootstrap demo</title>
+              <link
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+                rel="stylesheet"
+                integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+                crossorigin="anonymous"
+              />
+              <link
+                rel="stylesheet"
+                href="./css/core.css"
+                class="template-customizer-core-css"
+              />
+              <link
+                rel="stylesheet"
+                href="./css/theme-default.css"
+                class="template-customizer-theme-css"
+              />
+              <link rel="stylesheet" href="./css/demo.css" />
+              <link rel="stylesheet" href="./css/custom.css" />
+              <link
+                href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+                rel="stylesheet"
+              />
+              <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+                integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+              />
+            </head>
+
+            <body>
+              <!-- Layout wrapper -->
+              <div class="layout-wrapper layout-content-navbar">
+                <div class="layout-container">
+                  <!-- Menu -->
+
+                  <aside
+                    id="layout-menu"
+                    class="layout-menu menu-vertical menu bg-menu-theme"
+                  >
+                    <div class="app-brand demo justify-content-start">
+                      <a href="profile.html" class="app-brand-link">
+                        <span
+                          class="app-brand-text demo menu-text fw-bolder text-uppercase text-gray"
+                        >
+                          BOY TOYS
+                        </span>
+                      </a>
+
+                      <a
+                        href="javascript:void(0);"
+                        class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none"
+                      >
+                        <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                      </a>
+                    </div>
+
+                    <div class="menu-inner-shadow"></div>
+
+                    <ul class="menu-inner py-1">
+                      <!-- Products -->
+                      <li class="menu-item">
+                        <a href="index.html" class="menu-link">
+                          <i class="menu-icon fa-solid fa-layer-group"></i>
+                          <div data-i18n="Analytics">Products</div>
+                        </a>
+                      </li>
+                      <!-- Banners -->
+                      <li class="menu-item">
+                        <a href="banner.html" class="menu-link">
+                          <i class="menu-icon fa-solid fa-panorama"></i>
+                          <div data-i18n="Analytics">Banners</div>
+                        </a>
+                      </li>
+                      <!-- Clients -->
+                      <li class="menu-item">
+                        <a href="clients.html" class="menu-link">
+                          <i class="menu-icon fa-solid fa-users"></i>
+                          <div data-i18n="Analytics">Clients</div>
+                        </a>
+                      </li>
+                      <!-- Branches -->
+                      <li class="menu-item active">
+                        <a href="branches.html" class="menu-link">
+                          <i class="menu-icon fa-solid fa-map-location-dot"></i>
+                          <div data-i18n="Analytics">Branches</div>
+                        </a>
+                      </li>
+                      <!-- Branchess -->
+                      <li class="menu-item">
+                        <a href="payments.html" class="menu-link">
+                          <i
+                            class="menu-icon fa-solid fa-money-check-dollar"
+                          ></i>
+                          <div data-i18n="Analytics">Payments</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </aside>
+                  <!-- / Menu -->
+
+                  <!-- Layout container -->
+                  <div class="layout-page">
+                    <!-- Navbar -->
+
+                    <nav
+                      class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+                      id="layout-navbar"
+                    >
+                      <div
+                        class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+                      >
+                        <a
+                          class="nav-item nav-link px-0 me-xl-4"
+                          href="javascript:void(0)"
+                        >
+                          <i class="bx bx-menu bx-sm"></i>
+                        </a>
+                      </div>
+
+                      <div
+                        class="navbar-nav-right d-flex align-items-center"
+                        id="navbar-collapse"
+                      >
+                        <ul class="nav d-none d-md-flex wu-main-nav">
+                          <li class="nav-item">
+                            <a href="#" class="nav-link"> Mail </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link"> SRS </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link"> Timetable </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link"> Attendace </a>
+                          </li>
+                        </ul>
+
+                        <ul
+                          class="navbar-nav flex-row align-items-center ms-auto"
+                        >
+                          <!-- User -->
+                          <li
+                            class="nav-item navbar-dropdown dropdown-user dropdown"
+                          >
+                            <a
+                              class="nav-link dropdown-toggle hide-arrow"
+                              href="javascript:void(0);"
+                              data-bs-toggle="dropdown"
+                            >
+                              <div class="avatar avatar-online">
+                                <img
+                                  src="./img/profile.jpeg"
+                                  alt
+                                  class="w-px-40 h-auto rounded-circle"
+                                />
+                              </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                      <div class="avatar avatar-online">
+                                        <img
+                                          src="./img/profile.jpeg"
+                                          alt
+                                          class="w-px-40 h-auto rounded-circle"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                      <span class="fw-semibold d-block"
+                                        >Zarina Ochilova</span
+                                      >
+                                      <small class="text-muted">Admin</small>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <div class="dropdown-divider"></div>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="./profile.html">
+                                  <i class="bx bx-user me-2"></i>
+                                  <span class="align-middle">My Profile</span>
+                                </a>
+                              </li>
+                              <li>
+                                <div class="dropdown-divider"></div>
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="auth-login-basic.html"
+                                >
+                                  <i class="bx bx-power-off me-2"></i>
+                                  <span class="align-middle">Log Out</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                          <!--/ User -->
+                        </ul>
+                      </div>
+                    </nav>
+
+                    <!-- / Navbar -->
+
+                    <!-- Content wrapper -->
+                    <div class="content-wrapper">
+                      <!-- Content -->
+
+                      <div class="container-xxl flex-grow-1 container-p-y">
+                        <h4 class="fw-bold mb-4">Branches</h4>
+
+                        <div class="row flex-column-reverse flex-md-row">
+                          <div
+                            class="col-xl-4 col-lg-5 col-md-5 order-1 order-md-0"
+                          >
+                            <!-- Customer-detail Card -->
+                          </div>
+
+                          <div
+                            class="col-xl-8 col-lg-7 col-md-7 order-0 order-md-1 d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card mb-4 justify-content-beetwen"
+                              style="height: 100%"
+                            >
+                              <div class="table-responsive mb-3">
+                                <div
+                                  class="dataTables_wrapper dt-bootstrap5 no-footer"
+                                >
+                                  <div
+                                    class="card-header d-flex flex-wrap py-3 py-sm-2 align-items-center"
+                                  >
+                                    <div
+                                      class="head-label text-center me-4 ms-1"
+                                    >
+                                      <h5 class="card-title mb-0 text-nowrap">
+                                        Orders placed
+                                      </h5>
+                                    </div>
+                                    <div
+                                      id="DataTables_Table_0_filter"
+                                      class="dataTables_filter"
+                                    >
+                                      <label
+                                        ><input
+                                          type="search"
+                                          class="form-control"
+                                          placeholder="Search order"
+                                      /></label>
+                                    </div>
+                                  </div>
+                                  <table
+                                    class="table datatables-customer-order border-top dataTable no-footer dtr-column"
+                                  >
+                                    <thead>
+                                      <tr>
+                                        <th
+                                          class="control sorting_disabled dtr-hidden"
+                                          style="width: 0px; display: none"
+                                          aria-label=""
+                                        ></th>
+                                        <th
+                                          class="sorting_disabled dt-checkboxes-cell dt-checkboxes-select-all"
+                                        >
+                                          <input
+                                            type="checkbox"
+                                            class="form-check-input"
+                                          />
+                                        </th>
+                                        <th class="">Order</th>
+                                        <th class="">Date</th>
+                                        <th class="">Status</th>
+                                        <th>Spent</th>
+                                        <th
+                                          class="text-md-center sorting_disabled"
+                                          aria-label="Actions"
+                                        >
+                                          Actions
+                                        </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="odd">
+                                        <td
+                                          class="control dtr-hidden"
+                                          style="display: none"
+                                        ></td>
+                                        <td class="dt-checkboxes-cell">
+                                          <input
+                                            type="checkbox"
+                                            class="dt-checkboxes form-check-input"
+                                          />
+                                        </td>
+                                        <td class="sorting_1">
+                                          <a
+                                            href="app-ecommerce-order-details.html"
+                                            class="fw-medium"
+                                            ><span>#9957</span></a
+                                          >
+                                        </td>
+                                        <td class="" style="">
+                                          <span class="text-nowrap"
+                                            >Nov 29, 2022</span
+                                          >
+                                        </td>
+                                        <td class="" style="">
+                                          <span
+                                            class="badge bg-label-primary"
+                                            text-capitalized=""
+                                            >Out for delivery</span
+                                          >
+                                        </td>
+                                        <td class="" style="">
+                                          <span>$59.28</span>
+                                        </td>
+                                        <td class="" style="">
+                                          <div class="text-xxl-center">
+                                            <button
+                                              class="btn btn-sm btn-icon dropdown-toggle hide-arrow"
+                                              data-bs-toggle="dropdown"
+                                            >
+                                              <i
+                                                class="bx bx-dots-vertical-rounded"
+                                              ></i>
+                                            </button>
+                                            <div
+                                              class="dropdown-menu dropdown-menu-end m-0"
+                                            >
+                                              <a
+                                                href="javascript:;"
+                                                class="dropdown-item"
+                                                >Edit</a
+                                              >
+                                              <a
+                                                href="javascript:;"
+                                                class="dropdown-item"
+                                                >View</a
+                                              ><a
+                                                href="javascript:;"
+                                                class="dropdown-item delete-record"
+                                                >Delete</a
+                                              >
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr class="even">
+                                        <td
+                                          class="control dtr-hidden"
+                                          style="display: none"
+                                        ></td>
+                                        <td class="dt-checkboxes-cell">
+                                          <input
+                                            type="checkbox"
+                                            class="dt-checkboxes form-check-input"
+                                          />
+                                        </td>
+                                        <td class="sorting_1">
+                                          <a
+                                            href="app-ecommerce-order-details.html"
+                                            class="fw-medium"
+                                            ><span>#9941</span></a
+                                          >
+                                        </td>
+                                        <td class="" style="">
+                                          <span class="text-nowrap"
+                                            >Jun 20, 2022</span
+                                          >
+                                        </td>
+                                        <td class="" style="">
+                                          <span
+                                            class="badge bg-label-info"
+                                            text-capitalized=""
+                                            >Ready to Pickup</span
+                                          >
+                                        </td>
+                                        <td class="" style="">
+                                          <span>$333.83</span>
+                                        </td>
+                                        <td class="" style="">
+                                          <div class="text-xxl-center">
+                                            <button
+                                              class="btn btn-sm btn-icon dropdown-toggle hide-arrow"
+                                              data-bs-toggle="dropdown"
+                                            >
+                                              <i
+                                                class="bx bx-dots-vertical-rounded"
+                                              ></i>
+                                            </button>
+                                            <div
+                                              class="dropdown-menu dropdown-menu-end m-0"
+                                            >
+                                              <a
+                                                href="javascript:;"
+                                                class="dropdown-item"
+                                                >Edit</a
+                                              >
+                                              <a
+                                                href="javascript:;"
+                                                class="dropdown-item"
+                                                >View</a
+                                              ><a
+                                                href="javascript:;"
+                                                class="dropdown-item delete-record"
+                                                >Delete</a
+                                              >
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr class="odd">
+                                        <td
+                                          class="control dtr-hidden"
+                                          style="display: none"
+                                        ></td>
+                                        <td class="dt-checkboxes-cell">
+                                          <input
+                                            type="checkbox"
+                                            class="dt-checkboxes form-check-input"
+                                          />
+                                        </td>
+                                        <td class="sorting_1">
+                                          <a
+                                            href="app-ecommerce-order-details.html"
+                                            class="fw-medium"
+                                            ><span>#9885</span></a
+                                          >
+                                        </td>
+                                        <td class="" style="">
+                                          <span class="text-nowrap"
+                                            >Sep 11, 2022</span
+                                          >
+                                        </td>
+                                        <td class="" style="">
+                                          <span
+                                            class="badge bg-label-success"
+                                            text-capitalized=""
+                                            >Delivered</span
+                                          >
+                                        </td>
+                                        <td class="" style="">
+                                          <span>$62.71</span>
+                                        </td>
+                                        <td class="" style="">
+                                          <div class="text-xxl-center">
+                                            <button
+                                              class="btn btn-sm btn-icon dropdown-toggle hide-arrow"
+                                              data-bs-toggle="dropdown"
+                                            >
+                                              <i
+                                                class="bx bx-dots-vertical-rounded"
+                                              ></i>
+                                            </button>
+                                            <div
+                                              class="dropdown-menu dropdown-menu-end m-0"
+                                            >
+                                              <a
+                                                href="javascript:;"
+                                                class="dropdown-item"
+                                                >View</a
+                                              >
+                                              <a
+                                                href="javascript:;"
+                                                class="dropdown-item"
+                                                >Edit</a
+                                              >
+                                              <a
+                                                href="javascript:;"
+                                                class="dropdown-item delete-record"
+                                                >Delete</a
+                                              >
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr class="even">
+                                        <td
+                                          class="control dtr-hidden"
+                                          style="display: none"
+                                        ></td>
+                                        <td class="dt-checkboxes-cell">
+                                          <input
+                                            type="checkbox"
+                                            class="dt-checkboxes form-check-input"
+                                          />
+                                        </td>
+                                        <td class="sorting_1">
+                                          <a
+                                            href="app-ecommerce-order-details.html"
+                                            class="fw-medium"
+                                            ><span>#9879</span></a
+                                          >
+                                        </td>
+                                        <td class="" style="">
+                                          <span class="text-nowrap"
+                                            >Dec 23, 2022</span
+                                          >
+                                        </td>
+                                        <td class="" style="">
+                                          <span
+                                            class="badge bg-label-warning"
+                                            text-capitalized=""
+                                            >Dispatched</span
+                                          >
+                                        </td>
+                                        <td class="" style="">
+                                          <span>$100.18</span>
+                                        </td>
+                                        <td class="" style="">
+                                          <div class="text-xxl-center">
+                                            <button
+                                              class="btn btn-sm btn-icon dropdown-toggle hide-arrow"
+                                              data-bs-toggle="dropdown"
+                                            >
+                                              <i
+                                                class="bx bx-dots-vertical-rounded"
+                                              ></i>
+                                            </button>
+                                            <div
+                                              class="dropdown-menu dropdown-menu-end m-0"
+                                            >
+                                              <a
+                                                href="javascript:;"
+                                                class="dropdown-item"
+                                                >View</a
+                                              ><a
+                                                href="javascript:;"
+                                                class="dropdown-item delete-record"
+                                                >Delete</a
+                                              >
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+
+                              <div class="row mx-4 mt-auto table-responsive">
+                                <div
+                                  class="col-md-12 col-xl-6 text-center text-xl-start pb-2 pb-lg-0 pe-0"
+                                >
+                                  <div
+                                    class="dataTables_info"
+                                    id="DataTables_Table_0_info"
+                                    role="status"
+                                    aria-live="polite"
+                                  >
+                                    Showing 1 to 6 of 100 entries
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-md-12 col-xl-6 d-flex justify-content-center justify-content-xl-end"
+                                >
+                                  <div
+                                    class="dataTables_paginate paging_simple_numbers"
+                                    id="DataTables_Table_0_paginate"
+                                  >
+                                    <ul class="pagination">
+                                      <li
+                                        class="paginate_button page-item previous disabled"
+                                        id="DataTables_Table_0_previous"
+                                      >
+                                        <a
+                                          aria-disabled="true"
+                                          role="link"
+                                          class="page-link"
+                                          >Previous</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="paginate_button page-item active"
+                                      >
+                                        <a
+                                          href="#"
+                                          role="link"
+                                          aria-current="page"
+                                          class="page-link"
+                                          >1</a
+                                        >
+                                      </li>
+                                      <li class="paginate_button page-item">
+                                        <a
+                                          href="#"
+                                          role="link"
+                                          class="page-link"
+                                          >2</a
+                                        >
+                                      </li>
+                                      <li class="paginate_button page-item">
+                                        <a
+                                          href="#"
+                                          role="link"
+                                          class="page-link"
+                                          >3</a
+                                        >
+                                      </li>
+                                      <li class="paginate_button page-item">
+                                        <a
+                                          href="#"
+                                          role="link"
+                                          class="page-link"
+                                          >4</a
+                                        >
+                                      </li>
+                                      <li class="paginate_button page-item">
+                                        <a
+                                          href="#"
+                                          role="link"
+                                          class="page-link"
+                                          >5</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="paginate_button page-item disabled"
+                                      >
+                                        <a
+                                          aria-disabled="true"
+                                          role="link"
+                                          class="page-link"
+                                          >…</a
+                                        >
+                                      </li>
+                                      <li class="paginate_button page-item">
+                                        <a
+                                          href="#"
+                                          role="link"
+                                          class="page-link"
+                                          >17</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="paginate_button page-item next"
+                                        id="DataTables_Table_0_next"
+                                      >
+                                        <a
+                                          href="#"
+                                          role="link"
+                                          class="page-link"
+                                          >Next</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- /Invoice table -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- / Content -->
+
+                      <div class="content-backdrop fade"></div>
+                    </div>
+                    <!-- Content wrapper -->
+                  </div>
+                  <!-- / Layout page -->
+                </div>
+
+                <!-- Overlay -->
+                <div class="layout-overlay layout-menu-toggle"></div>
+              </div>
+              <!-- / Layout wrapper -->
+
+              <!-- Mobile Tabs -->
+              <div class="mobile-nav d-lg-none">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                      <i class="bx bx-home-circle"></i>
+                      <span class="menu-title">Home</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">
+                      <i class="bx bxs-file-doc"></i>
+                      <span class="menu-title">Local</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bx bxs-file-plus"></i>
+                      <span class="menu-title">Create</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bx bxs-file-doc"></i>
+                      <span class="menu-title">Local</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Modal -->
+
+              <!-- Delete Modal -->
+
+              <script
+                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                crossorigin="anonymous"
+              ></script>
+              <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+                integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+                crossorigin="anonymous"
+              ></script>
+            </body>
+          </html>
+
+          <a class="nav-link" href="#">
+            <i class="bx bxs-file-doc"></i>
+            <span class="menu-title">Local</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal -->
+
+    <!-- Delete Modal -->
+
+    <div
+      class="modal fade"
+      id="deleteOrder"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      aria-labelledby="deletePaymentLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="deletePaymentLabel">
+              Bu Ordersni o'chirmoqchimisiz?
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">Amalni tasdiqlang</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Yo'q
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Ha
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
