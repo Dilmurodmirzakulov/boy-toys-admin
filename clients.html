@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/core.css"
+      class="template-customizer-core-css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/theme-default.css"
+      class="template-customizer-theme-css"
+    />
+    <link rel="stylesheet" href="./css/demo.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside
+          id="layout-menu"
+          class="layout-menu menu-vertical menu bg-menu-theme"
+        >
+          <div class="app-brand demo justify-content-start">
+            <a href="profile.html" class="app-brand-link">
+              <span
+                class="app-brand-text demo menu-text fw-bolder text-uppercase text-gray"
+              >
+                BOY TOYS
+              </span>
+            </a>
+
+            <a
+              href="javascript:void(0);"
+              class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none"
+            >
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Products -->
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon fa-solid fa-layer-group"></i>
+                <div data-i18n="Analytics">Products</div>
+              </a>
+            </li>
+            <!-- Banners -->
+            <li class="menu-item">
+              <a href="banner.html" class="menu-link">
+                <i class="menu-icon fa-solid fa-panorama"></i>
+                <div data-i18n="Analytics">Banners</div>
+              </a>
+            </li>
+            <!-- Clients -->
+            <li class="menu-item active">
+              <a href="clients.html" class="menu-link">
+                <i class="menu-icon fa-solid fa-users"></i>
+                <div data-i18n="Analytics">Clients</div>
+              </a>
+            </li>
+            <!-- Branches -->
+            <li class="menu-item">
+              <a href="branches.html" class="menu-link">
+                <i class="menu-icon fa-solid fa-map-location-dot"></i>
+                <div data-i18n="Analytics">Branches</div>
+              </a>
+            </li>
+            <!-- Payments -->
+            <li class="menu-item">
+              <a href="payments.html" class="menu-link">
+                <i class="menu-icon fa-solid fa-money-check-dollar"></i>
+                <div data-i18n="Analytics">Payments</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div
+              class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+            >
+              <a
+                class="nav-item nav-link px-0 me-xl-4"
+                href="javascript:void(0)"
+              >
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div
+              class="navbar-nav-right d-flex align-items-center"
+              id="navbar-collapse"
+            >
+              <ul class="nav d-none d-md-flex wu-main-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link"> Mail </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"> SRS </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"> Timetable </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"> Attendace </a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                  >
+                    <div class="avatar avatar-online">
+                      <img
+                        src="./img/profile.jpeg"
+                        alt
+                        class="w-px-40 h-auto rounded-circle"
+                      />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img
+                                src="./img/profile.jpeg"
+                                alt
+                                class="w-px-40 h-auto rounded-circle"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block"
+                              >Zarina Ochilova</span
+                            >
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./profile.html">
+                        <i class="bx bx-user me-2"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="auth-login-basic.html">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold mb-4">Clients</h4>
+
+              <div class="card">
+                <div class="card-body">
+                  <div
+                    class="row mb-4 justify-content-between align-items-center"
+                  >
+                    <div class="col-6 col-md-4 col-sm-6">
+                      <div class="d-flex align-items-center">
+                        <label
+                          for="local-search"
+                          class="me-2 d-none d-xs-none d-md-block"
+                          >Search:</label
+                        >
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Search..."
+                          id="local-search"
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-1 col-md-4 col-sm-3 d-flex justify-content-end"
+                    >
+                      <button
+                        class="dt-button create-new btn btn-primary"
+                        tabindex="0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#productEditModal"
+                        type="button"
+                      >
+                        <span
+                          ><i class="bx bx-plus me-sm-1"></i>
+                          <span class="d-none d-sm-inline-block"
+                            >Add</span
+                          ></span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <div class="overflow-x-auto">
+                    <table
+                      class="datatables-customers table border-top dataTable no-footer dtr-column table-striped table-bordered"
+                      id="DataTables_Table_0"
+                      aria-describedby="DataTables_Table_0_info"
+                    >
+                      <thead>
+                        <tr>
+                          <th
+                            class="control sorting_disabled dtr-hidden"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 0px; display: none"
+                            aria-label=""
+                          ></th>
+                          <th
+                            class=""
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 18px"
+                            data-col="1"
+                            aria-label=""
+                          >
+                            #
+                          </th>
+                          <th
+                            class="sorting"
+                            tabindex="0"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 365px"
+                            aria-label="Customer: activate to sort column ascending"
+                            aria-sort="descending"
+                          >
+                            Customer
+                          </th>
+                          <th
+                            class="text-nowrap sorting"
+                            tabindex="0"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 178px"
+                            aria-label="Customer Id: activate to sort column ascending"
+                          >
+                            Customer Id
+                          </th>
+                          <th
+                            class="sorting"
+                            tabindex="0"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 296px"
+                            aria-label="Country: activate to sort column ascending"
+                          >
+                            Name
+                          </th>
+                          <th
+                            class="sorting"
+                            tabindex="0"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 103px"
+                            aria-label="Order: activate to sort column ascending"
+                          >
+                            phone
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="">
+                          <td
+                            class="control"
+                            tabindex="0"
+                            style="display: none"
+                          ></td>
+                          <td class="dt-checkboxes-cell">1</td>
+                          <td class="sorting_1">
+                            <div
+                              class="d-flex justify-content-start align-items-center customer-name"
+                            >
+                              <div class="avatar-wrapper">
+                                <div class="avatar me-2">
+                                  <img
+                                    src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/17.png"
+                                    alt="Avatar"
+                                    class="rounded-circle"
+                                  />
+                                </div>
+                              </div>
+                              <div class="d-flex flex-column">
+                                <a href="./client-about.html"
+                                  ><span class="fw-medium">John Doe</span></a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="fw-medium text-heading">#895280</span>
+                          </td>
+                          <td>
+                            <div
+                              class="d-flex justify-content-start align-items-center customer-country"
+                            >
+                              <div>
+                                <i
+                                  class="fis fi fi-ua rounded-circle me-2 fs-3"
+                                ></i>
+                              </div>
+                              <div><span>Kimdir</span></div>
+                            </div>
+                          </td>
+                          <td><span>901234567</span></td>
+                        </tr>
+
+                        <tr class="">
+                          <td
+                            class="control"
+                            tabindex="0"
+                            style="display: none"
+                          ></td>
+                          <td class="dt-checkboxes-cell">2</td>
+                          <td class="sorting_1">
+                            <div
+                              class="d-flex justify-content-start align-items-center customer-name"
+                            >
+                              <div class="avatar-wrapper">
+                                <div class="avatar me-2">
+                                  <span
+                                    class="avatar-initial rounded-circle bg-label-primary"
+                                    >YL</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="d-flex flex-column">
+                                <a
+                                  href="app-ecommerce-customer-details-overview.html"
+                                  ><span class="fw-medium">Yank Luddy</span></a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="fw-medium text-heading">#586615</span>
+                          </td>
+                          <td>
+                            <div
+                              class="d-flex justify-content-start align-items-center customer-country"
+                            >
+                              <div>
+                                <i
+                                  class="fis fi fi-pt rounded-circle me-2 fs-3"
+                                ></i>
+                              </div>
+                              <div><span>Portugal</span></div>
+                            </div>
+                          </td>
+                          <td><span>462</span></td>
+                        </tr>
+                        <tr class="">
+                          <td
+                            class="control"
+                            tabindex="0"
+                            style="display: none"
+                          ></td>
+                          <td class="dt-checkboxes-cell">3</td>
+                          <td class="sorting_1">
+                            <div
+                              class="d-flex justify-content-start align-items-center customer-name"
+                            >
+                              <div class="avatar-wrapper">
+                                <div class="avatar me-2">
+                                  <span
+                                    class="avatar-initial rounded-circle bg-label-info"
+                                    >VT</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="d-flex flex-column">
+                                <a
+                                  href="app-ecommerce-customer-details-overview.html"
+                                  ><span class="fw-medium"
+                                    >Valenka Turbill</span
+                                  ></a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="fw-medium text-heading">#179914</span>
+                          </td>
+                          <td>
+                            <div
+                              class="d-flex justify-content-start align-items-center customer-country"
+                            >
+                              <div>
+                                <i
+                                  class="fis fi fi-tm rounded-circle me-2 fs-3"
+                                ></i>
+                              </div>
+                              <div><span>Turkmenistan</span></div>
+                            </div>
+                          </td>
+                          <td><span>550</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-5"
+                  >
+                    <span class="mb-2 mb-md-0"
+                      >Showing 1 to 10 of 45 entries</span
+                    >
+                    <nav aria-label="Page navigation">
+                      <ul class="pagination m-0 align-items-center">
+                        <li class="page-item prev">
+                          <a class="page-link" href="javascript:void(0);"
+                            ><i class="tf-icon bx bx-chevron-left"></i
+                          ></a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="javascript:void(0);">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="javascript:void(0);">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="javascript:void(0);">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="javascript:void(0);">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="javascript:void(0);">5</a>
+                        </li>
+                        <li class="page-item next">
+                          <a class="page-link" href="javascript:void(0);"
+                            ><i class="tf-icon bx bx-chevron-right"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- / Content -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Mobile Tabs -->
+    <div class="mobile-nav d-lg-none">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <i class="bx bx-home-circle"></i>
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">
+            <i class="bx bxs-file-doc"></i>
+            <span class="menu-title">Local</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bx bxs-file-plus"></i>
+            <span class="menu-title">Create</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bx bxs-file-doc"></i>
+            <span class="menu-title">Local</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="productEditModal"
+      tabindex="-1"
+      aria-labelledby="productEditModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productEditModalLabel">Slider</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div>
+                <label htmlFor="name-uz" class="mb-2 form-labe"> Name </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner nomi ..."
+                  name="nameUz"
+                />
+                <label htmlFor="description-uz" class="mb-2 form-labe">
+                  Tasnifi
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner Tasnifi ..."
+                  name="descriptionUz"
+                ></textarea>
+              </div>
+
+              <div>
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                />
+              </div>
+              <hr class="my-4" />
+              <div>
+                <label htmlFor="name-ru" class="mb-2 form-labe">
+                  Название
+                </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner nomi"
+                  name="nameRu"
+                />
+                <label htmlFor="description-ru" class="mb-2 form-labe">
+                  Описание
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner tasnifi..."
+                  name="descriptionRu"
+                ></textarea>
+              </div>
+              <div>
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                />
+              </div>
+              <hr class="my-4" />
+              <div>
+                <label htmlFor="name-eu" class="mb-2 form-labe"> Name </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner name"
+                  name="nameEn"
+                />
+                <label htmlFor="description-eu" class="mb-2 form-labe">
+                  Description
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner description..."
+                  name="descriptionEn"
+                ></textarea>
+              </div>
+
+              <div>
+                <hr class="my-4" />
+
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Delete Modal -->
+    <div
+      class="modal fade"
+      id="deletePayment"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      aria-labelledby="deletePaymentLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="deletePaymentLabel">
+              Bu payment turini o'chirmoqchimisiz?
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">Amalni tasdiqlang</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Yo'q
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Ha
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Create Modal -->
+
+    <div
+      class="modal fade"
+      id="bannerCreateModal"
+      tabindex="-1"
+      aria-labelledby="productEditModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productEditModalLabel">Slider</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div>
+                <label htmlFor="name-uz" class="mb-2 form-labe"> Name </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner nomi ..."
+                  name="nameUz"
+                />
+                <label htmlFor="description-uz" class="mb-2 form-labe">
+                  Tasnifi
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner Tasnifi ..."
+                  name="descriptionUz"
+                ></textarea>
+              </div>
+
+              <div>
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                />
+              </div>
+              <hr class="my-4" />
+              <div>
+                <label htmlFor="name-ru" class="mb-2 form-labe">
+                  Название
+                </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner nomi"
+                  name="nameRu"
+                />
+                <label htmlFor="description-ru" class="mb-2 form-labe">
+                  Описание
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner tasnifi..."
+                  name="descriptionRu"
+                ></textarea>
+              </div>
+              <div>
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                />
+              </div>
+              <hr class="my-4" />
+              <div>
+                <label htmlFor="name-eu" class="mb-2 form-labe"> Name </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner name"
+                  name="nameEn"
+                />
+                <label htmlFor="description-eu" class="mb-2 form-labe">
+                  Description
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner description..."
+                  name="descriptionEn"
+                ></textarea>
+              </div>
+
+              <div>
+                <hr class="my-4" />
+
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- view Modal -->
+
+    <div
+      class="modal fade"
+      id="bannerViewModal"
+      tabindex="-1"
+      aria-labelledby="productEditModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productEditModalLabel">Slider</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div>
+                <label htmlFor="name-uz" class="mb-2 form-labe"> Name </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner nomi ..."
+                  name="nameUz"
+                  disabled="true"
+                />
+                <label htmlFor="description-uz" class="mb-2 form-labe">
+                  Tasnifi
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner Tasnifi ..."
+                  name="descriptionUz"
+                  disabled="true"
+                ></textarea>
+              </div>
+
+              <div>
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                  disabled="true"
+                />
+              </div>
+              <hr class="my-4" />
+              <div>
+                <label htmlFor="name-ru" class="mb-2 form-labe">
+                  Название
+                </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner nomi"
+                  name="nameRu"
+                  disabled="true"
+                />
+                <label htmlFor="description-ru" class="mb-2 form-labe">
+                  Описание
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner tasnifi..."
+                  name="descriptionRu"
+                  disabled="true"
+                ></textarea>
+              </div>
+              <div>
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                  disabled="true"
+                />
+              </div>
+              <hr class="my-4" />
+              <div>
+                <label htmlFor="name-eu" class="mb-2 form-labe"> Name </label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Banner name"
+                  name="nameEn"
+                  disabled="true"
+                />
+                <label htmlFor="description-eu" class="mb-2 form-labe">
+                  Description
+                </label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Banner description..."
+                  name="descriptionEn"
+                  disabled="true"
+                ></textarea>
+              </div>
+
+              <div>
+                <hr class="my-4" />
+
+                <label htmlFor="group-image" class="mb-2 form-labe">
+                  Banner Image
+                </label>
+                <input
+                  type="file"
+                  id="group-image"
+                  name="fileImage"
+                  class="form-control"
+                  placeholder="Group image"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
